@@ -1,0 +1,41 @@
+name: Bug report
+description: The CLI or a workflow does the wrong thing.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Please remove personal data (CV content, emails, recruiter names) before posting.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: And what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. jobhunt init
+        2. jobhunt screen post.md
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: jobhunt version and OS
+      placeholder: "jobhunt 0.1.0, macOS 15, Python 3.12"
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and model (if a workflow issue)
+      placeholder: "Claude Code, Opus"

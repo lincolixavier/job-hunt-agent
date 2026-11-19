@@ -1,0 +1,64 @@
+# Your CV as data. Facts live here once; each application picks and orders them.
+# Rule for you and your agent: nothing goes in a tailored CV that is not written here first.
+# EXAMPLE persona below: replace it with your real history.
+
+[layout]
+max_pages = 1
+
+[extras]
+earlier = "Earlier: Harbor Studio (Web Developer, 2013–2016)."
+languages = "English (fluent) · Portuguese (native) · Spanish (conversational)"
+education = "BSc Computer Science, University of Example (2009–2013)"
+
+[[experience]]
+id = "northwind"
+company = "Northwind Labs"
+role = "Senior Full-Stack Engineer"
+dates = "Mar 2022 – Present"
+
+[experience.bullets]
+checkout = "Rebuilt the checkout flow in Next.js and Node, cutting drop-off by 18% across 40k monthly orders."
+ai = "Shipped an LLM support assistant with tool calling and evals; it now resolves 35% of tickets without a human."
+platform = "Designed the internal API platform (Fastify, Postgres, Drizzle) used by 6 product squads."
+perf = "Cut p95 page load from 3.1s to 1.2s with route-level code splitting and edge caching."
+mentoring = "Mentored 4 engineers to mid and senior level; ran the weekly architecture review."
+
+[[experience]]
+id = "bluefin"
+company = "Bluefin Commerce"
+role = "Tech Lead, Frontend"
+dates = "Jan 2019 – Feb 2022"
+
+[experience.bullets]
+lead = "Led a team of 6 frontend engineers through a Vue 2 to Vue 3 migration with zero downtime."
+designsystem = "Built the design system in Storybook, adopted by 5 product teams and 3 brands."
+testing = "Introduced Vitest and Playwright, raising coverage on critical paths from 20% to 85%."
+
+[[experience]]
+id = "tidewater"
+company = "Tidewater Health"
+role = "Software Engineer"
+dates = "Jun 2016 – Dec 2018"
+
+[experience.bullets]
+portal = "Built the patient portal in React and GraphQL, serving 200k patients."
+integrations = "Integrated 3 hospital systems over HL7/FHIR with retries and audit logging."
+
+# Bases: two or three angles on the same facts. Each target picks one and overrides what it needs.
+[bases.fullstack]
+headline = "Senior Full-Stack Engineer · TypeScript, React, Node, Postgres"
+summary = "Full-stack engineer with 10 years shipping product in TypeScript. I own features end to end, from schema to UI, and I measure them after launch."
+skills = { Languages = "TypeScript, JavaScript, SQL", Frontend = "React, Next.js, Vue 3, Tailwind, Storybook", Backend = "Node.js, Fastify, GraphQL, PostgreSQL, Drizzle", Quality = "Vitest, Playwright, CI/CD, observability", AI = "LLM features in production, tool calling, evals, Claude API" }
+experience = { northwind = ["checkout", "platform", "ai", "perf"], bluefin = ["lead", "designsystem"], tidewater = ["portal"] }
+
+[bases.frontend]
+headline = "Senior Frontend Engineer · React, Next.js, Vue, design systems"
+summary = "Frontend engineer and former tech lead with 10 years building fast, accessible product UIs and the systems that keep them consistent."
+skills = { Languages = "TypeScript, JavaScript, CSS", Frameworks = "React, Next.js, Vue 3, Nuxt", Systems = "Design systems, Storybook, accessibility (WCAG 2.1)", Quality = "Vitest, Playwright, Core Web Vitals" }
+experience = { northwind = ["perf", "checkout", "mentoring"], bluefin = ["designsystem", "lead", "testing"], tidewater = ["portal"] }
+
+[bases.ai]
+headline = "Product Engineer · LLM features, agents and evals in TypeScript"
+summary = "Product engineer who ships LLM features to production and keeps them measurable: tool calling, evals, cost control and a human fallback."
+skills = { AI = "Claude API, OpenAI API, tool calling, agents, evals, MCP", Languages = "TypeScript, SQL", Stack = "Next.js, Node.js, PostgreSQL, Drizzle" }
+experience = { northwind = ["ai", "platform", "checkout"], bluefin = ["lead"], tidewater = ["integrations"] }

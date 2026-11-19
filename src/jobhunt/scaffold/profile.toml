@@ -1,0 +1,62 @@
+# Your profile. The agent reads this before every task, and `jobhunt` uses it for
+# screening, salary and writing checks. Everything here is an EXAMPLE persona:
+# replace it (or run the setup workflow and let your agent interview you).
+
+[person]
+name = "Alex Rivera"
+location = "Lisbon, Portugal"          # what you type in "location" fields. City + country, never a street.
+timezone = "UTC+0"
+email = "alex@example.com"
+phone = "+351 900 000 000"
+links = { linkedin = "https://www.linkedin.com/in/alex-rivera-example", github = "https://github.com/alex-example", site = "https://alex.example.com" }
+reply_language = "en"                  # language the agent uses to talk to YOU
+
+[search]
+roles = ["Senior Full-Stack Engineer", "Senior Frontend Engineer", "Product Engineer", "AI Engineer"]
+seniority = "senior"
+one_per_company = true                 # `jobhunt track add` refuses a second role at the same company
+skip_companies = ["Example Corp"]
+# Plain-language rules. A posting that breaks any of them is skipped, with the reason logged.
+hard_rules = [
+  "100% remote. No hybrid, no office days, no paid trips, no offsites or retreats.",
+  "No on-call or pager rotation.",
+  "Must hire from my country (contractor, EOR or local entity all fine).",
+  "Main stack must be in my CV. A language I don't know is fine only if they say you can learn on the job.",
+]
+# Soft preferences. Used to rank, never to skip.
+preferences = [
+  "Product companies over agencies.",
+  "Teams that use AI coding tools daily.",
+]
+
+# Deterministic pre-filter used by `jobhunt screen`. Matching is case-insensitive,
+# spaces and hyphens are interchangeable ("on call" = "on-call" = "oncall"),
+# and a trailing * matches word stems ("relocat*" = relocate, relocation).
+[screen]
+reject = [
+  "on call", "pager*", "hybrid", "in office", "in-person", "onsite", "on site",
+  "offsite*", "retreat*", "relocat*", "must be located in", "security clearance",
+]
+warn = [
+  "travel", "python", "golang", "java", "degree required", "bachelor*", "us citizen*",
+  "work authorization", "visa", "contract-to-hire", "timezone overlap",
+]
+
+[salary]
+currency = "USD"
+period = "month"                       # hour | day | month | year
+policy = "midpoint"                    # midpoint of a posted range | max of the range | target (always ask your target)
+targets = { fullstack = 6000, frontend = 5500 }
+
+[salary.other.EUR]                     # targets for forms in other currencies
+fullstack = 5500
+frontend = 5000
+
+[writing]
+# Applied by `jobhunt lint` to cover notes, form answers, emails and DMs.
+banned_chars = ["—"]
+banned_phrases = [
+  "I'm excited to", "I am excited to", "passionate about", "leverage", "synergy", "delve",
+  "fast-paced environment", "team player", "I hope this email finds you well", "game-changer",
+]
+limits = { linkedin_note = 200, linkedin_inmail = 1900, cover_note = 1200, form_answer = 1500 }
