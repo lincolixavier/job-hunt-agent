@@ -1,0 +1,9 @@
+base = "fullstack"
+company = "Acme"
+role = "Senior Full-Stack Engineer"
+url = "https://jobs.example.com/acme/senior-fullstack"
+
+# Overrides for this posting only. Reword and reorder; never add facts that are not in cv.toml.
+headline = "Senior Full-Stack Engineer · Next.js, Node, Postgres, LLM features"
+summary = "Full-stack engineer with 10 years in TypeScript. At Northwind I rebuilt checkout (-18% drop-off) and shipped an LLM support assistant that resolves 35% of tickets, the two things this role asks for."
+experience = { northwind = ["checkout", "ai", "platform", "perf"], bluefin = ["lead", "testing"], tidewater = ["portal"] }

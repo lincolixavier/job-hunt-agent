@@ -1,0 +1,27 @@
+name: Portal quirk
+description: An application portal behaves differently than docs/portals.md says.
+labels: [portals]
+body:
+  - type: input
+    id: portal
+    attributes:
+      label: Portal
+      placeholder: "Ashby, Lever, Greenhouse, Workable, a regional ATS..."
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What the agent ran into
+      description: The field, the step, the error. No personal data, please.
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: What worked (if anything)
+  - type: input
+    id: when
+    attributes:
+      label: When you saw it
+      placeholder: "2026-03"
