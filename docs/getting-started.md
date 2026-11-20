@@ -17,7 +17,7 @@ About 20 minutes, most of it spent answering your agent's setup questions.
 ## 2. Install
 
 ```bash
-git clone https://github.com/OWNER/job-hunt-agent.git
+git clone https://github.com/lincolixavier/job-hunt-agent.git
 cd job-hunt-agent
 make setup              # creates .venv and installs jobhunt + dev tools
 source .venv/bin/activate

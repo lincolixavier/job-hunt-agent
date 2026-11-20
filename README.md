@@ -6,7 +6,7 @@
 
 It finds postings that match your rules, tailors a one-page CV for each, fills the application, tracks everything, and hands you anything that needs a human.
 
-[![CI](https://github.com/OWNER/job-hunt-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/job-hunt-agent/actions/workflows/ci.yml)
+[![CI](https://github.com/lincolixavier/job-hunt-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/lincolixavier/job-hunt-agent/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)
 ![Dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen)
@@ -57,7 +57,7 @@ agent > Interview: Acme, Thu 14:00, with the Head of Engineering (booked).
 ## Quickstart
 
 ```bash
-git clone https://github.com/OWNER/job-hunt-agent.git && cd job-hunt-agent
+git clone https://github.com/lincolixavier/job-hunt-agent.git && cd job-hunt-agent
 make setup && source .venv/bin/activate   # or just use bin/jobhunt, no install needed
 jobhunt init                               # creates your private workspace in me/
 cp ~/Downloads/my-cv.pdf me/base/
@@ -115,7 +115,7 @@ This is a tool for one person's careful search, not a spam cannon: no duplicate 
 
 ## Contributing
 
-Portal quirks, new posting sources, workflow improvements and translations are especially welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md); the quickest contribution is a [portal quirk report](https://github.com/OWNER/job-hunt-agent/issues/new?template=portal_quirk.yml).
+Portal quirks, new posting sources, workflow improvements and translations are especially welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md); the quickest contribution is a [portal quirk report](https://github.com/lincolixavier/job-hunt-agent/issues/new?template=portal_quirk.yml).
 
 ## License
 

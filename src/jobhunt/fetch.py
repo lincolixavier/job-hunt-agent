@@ -11,7 +11,7 @@ from urllib.parse import urlparse
 
 from jobhunt import __version__
 
-USER_AGENT = f"jobhunt/{__version__} (+https://github.com/OWNER/job-hunt-agent)"
+USER_AGENT = f"jobhunt/{__version__} (+https://github.com/lincolixavier/job-hunt-agent)"
 BLOCK_TAGS = {
     "p",
     "div",
