@@ -29,9 +29,9 @@ dev = ["pytest>=8", "ruff>=0.6"]
 jobhunt = "jobhunt.cli:main"
 
 [project.urls]
-Documentation = "https://github.com/OWNER/job-hunt-agent/tree/main/docs"
-Issues = "https://github.com/OWNER/job-hunt-agent/issues"
-Changelog = "https://github.com/OWNER/job-hunt-agent/blob/main/CHANGELOG.md"
+Documentation = "https://github.com/lincolixavier/job-hunt-agent/tree/main/docs"
+Issues = "https://github.com/lincolixavier/job-hunt-agent/issues"
+Changelog = "https://github.com/lincolixavier/job-hunt-agent/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]

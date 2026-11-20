@@ -23,5 +23,5 @@ All notable changes are documented here. The format follows [Keep a Changelog](h
 - Docs: getting started, how it works, CLI reference, other agents, portal field notes, sources, writing guide, responsible use, FAQ.
 - CI (ruff + pytest on Linux and macOS, Python 3.11 to 3.13), Dependabot, issue and PR templates.
 
-[Unreleased]: https://github.com/OWNER/job-hunt-agent/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/OWNER/job-hunt-agent/releases/tag/v0.1.0
+[Unreleased]: https://github.com/lincolixavier/job-hunt-agent/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/lincolixavier/job-hunt-agent/releases/tag/v0.1.0

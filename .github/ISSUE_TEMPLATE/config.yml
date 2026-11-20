@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Question or idea
-    url: https://github.com/OWNER/job-hunt-agent/discussions
+    url: https://github.com/lincolixavier/job-hunt-agent/discussions
     about: Ask how to do something or share how you use it.
   - name: Security issue
-    url: https://github.com/OWNER/job-hunt-agent/security/advisories/new
+    url: https://github.com/lincolixavier/job-hunt-agent/security/advisories/new
     about: Report vulnerabilities privately, please.

@@ -6,10 +6,10 @@ Thanks for helping. This project gets better mostly through field experience: a 
 
 | Contribution | How |
 |---|---|
-| A portal behaves differently than `docs/portals.md` says | [Portal quirk issue](https://github.com/OWNER/job-hunt-agent/issues/new?template=portal_quirk.yml) or a PR to the doc |
+| A portal behaves differently than `docs/portals.md` says | [Portal quirk issue](https://github.com/lincolixavier/job-hunt-agent/issues/new?template=portal_quirk.yml) or a PR to the doc |
 | A workflow step agents get wrong | PR to `workflows/` with what went wrong and how the new wording prevents it |
-| A bug in the CLI | [Bug report](https://github.com/OWNER/job-hunt-agent/issues/new?template=bug_report.yml), ideally with a failing test |
-| A new CLI feature | Open a [feature request](https://github.com/OWNER/job-hunt-agent/issues/new?template=feature_request.yml) first so we can agree on scope |
+| A bug in the CLI | [Bug report](https://github.com/lincolixavier/job-hunt-agent/issues/new?template=bug_report.yml), ideally with a failing test |
+| A new CLI feature | Open a [feature request](https://github.com/lincolixavier/job-hunt-agent/issues/new?template=feature_request.yml) first so we can agree on scope |
 | Docs for another agent | PR to `docs/agents.md` |
 
 **Never include personal data** (your CV, tracker, emails, real recruiter names) in issues, PRs or test fixtures. Use the fictional persona from `src/jobhunt/scaffold/`.
